@@ -1,0 +1,28 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["jsdoc"],
+  "rules": {
+    "no-restricted-syntax": 0,
+    "no-param-reassign": [2, { "props": false }],
+    "no-plusplus": 0,
+    "prefer-rest-params": 0,
+    "strict": 0
+    // "jsdoc/check-alignment": 2,
+    // "jsdoc/check-indentation": 2,
+    // "jsdoc/check-param-names": 2,
+    // "jsdoc/check-tag-names": 2,
+    // "jsdoc/newline-after-description": [2, "never"],
+    // "jsdoc/require-param": 2,
+    // "jsdoc/require-param-name": 2,
+    // "jsdoc/require-param-type": 2,
+    // "jsdoc/require-returns-type": 2
+  },
+  "overrides": [
+    {
+      "files": ["tests/*"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

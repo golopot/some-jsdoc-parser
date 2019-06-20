@@ -1,0 +1,2022 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`
+/**
+  * @param a
+  * @returns foo
+  */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[9, 15]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[16, 17]"
+      },
+      "description": null,
+      "range": "[9, 17]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[22, 30]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[31, 34]"
+      },
+      "range": "[22, 34]"
+    }
+  ],
+  "range": "[0, 39]"
+}
+`;
+
+exports[`
+/**
+  foo
+  goo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo\\ngoo",
+    "range": "[7, 16]"
+  },
+  "blocks": [],
+  "range": "[0, 20]"
+}
+`;
+
+exports[`
+/**
+ *
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [],
+  "range": "[0, 11]"
+}
+`;
+
+exports[`
+/**
+ * @
+ * @returns
+ */
+ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "Tag expected.",
+  "type": undefined,
+}
+`;
+
+exports[`
+/**
+ * @my-tag {any} a foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "my-tag",
+        "range": "[8, 15]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "{any} a foo",
+        "range": "[16, 27]"
+      },
+      "range": "[8, 27]"
+    }
+  ],
+  "range": "[0, 31]"
+}
+`;
+
+exports[`
+/**
+ * @param
+ *   foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[20, 23]"
+      },
+      "range": "[8, 23]"
+    }
+  ],
+  "range": "[0, 27]"
+}
+`;
+
+exports[`
+/**
+ * @param
+ * @returns
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[8, 14]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[18, 26]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[18, 26]"
+    }
+  ],
+  "range": "[0, 30]"
+}
+`;
+
+exports[`
+/**
+ * @param
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[8, 14]"
+    }
+  ],
+  "range": "[0, 18]"
+}
+`;
+
+exports[`
+/**
+ * @param [a
+ * @returns
+ */
+ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "\\"]\\" expected.",
+  "type": undefined,
+}
+`;
+
+exports[`
+/**
+ * @param {
+ *   number
+ * }
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "\\n   number\\n ",
+        "range": "[15, 33]"
+      },
+      "name": null,
+      "description": null,
+      "range": "[8, 33]"
+    }
+  ],
+  "range": "[0, 37]"
+}
+`;
+
+exports[`
+/**
+ * @param {"}" | "{"} a
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "\\"",
+        "range": "[15, 18]"
+      },
+      "name": {
+        "type": "JSDocName",
+        "name": "\\"",
+        "optional": false,
+        "range": "[18, 19]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "| \\"{\\"} a",
+        "range": "[20, 28]"
+      },
+      "range": "[8, 28]"
+    }
+  ],
+  "range": "[0, 32]"
+}
+`;
+
+exports[`
+/**
+ * @param {{
+ *    x: any
+ * }} a
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "{\\n    x: any\\n }",
+        "range": "[15, 36]"
+      },
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[37, 38]"
+      },
+      "description": null,
+      "range": "[8, 38]"
+    }
+  ],
+  "range": "[0, 42]"
+}
+`;
+
+exports[`
+/**
+ * @param {{x: any}} a
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "{x: any}",
+        "range": "[15, 25]"
+      },
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[26, 27]"
+      },
+      "description": null,
+      "range": "[8, 27]"
+    }
+  ],
+  "range": "[0, 31]"
+}
+`;
+
+exports[`
+/**
+ * @param {{x: number} a
+ */
+ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "'}' expected.",
+  "type": undefined,
+}
+`;
+
+exports[`
+/**
+ * @param {any} a foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "any",
+        "range": "[15, 20]"
+      },
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[21, 22]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[23, 26]"
+      },
+      "range": "[8, 26]"
+    }
+  ],
+  "range": "[0, 30]"
+}
+`;
+
+exports[`
+/**
+ * @param {number a
+ */
+ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "'}' expected.",
+  "type": undefined,
+}
+`;
+
+exports[`
+/**
+ * @param a
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[15, 16]"
+      },
+      "description": null,
+      "range": "[8, 16]"
+    }
+  ],
+  "range": "[0, 20]"
+}
+`;
+
+exports[`
+/**
+ * @param a foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[8, 14]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[15, 16]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[17, 20]"
+      },
+      "range": "[8, 20]"
+    }
+  ],
+  "range": "[0, 24]"
+}
+`;
+
+exports[`
+/**
+ * @returns	foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[17, 20]"
+      },
+      "range": "[8, 20]"
+    }
+  ],
+  "range": "[0, 24]"
+}
+`;
+
+exports[`
+/**
+ * @returns
+ *   {any}
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "{any}",
+        "range": "[22, 27]"
+      },
+      "range": "[8, 27]"
+    }
+  ],
+  "range": "[0, 31]"
+}
+`;
+
+exports[`
+/**
+ * @returns
+ *   foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[22, 25]"
+      },
+      "range": "[8, 25]"
+    }
+  ],
+  "range": "[0, 29]"
+}
+`;
+
+exports[`
+/**
+ * @returns
+ * foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[20, 23]"
+      },
+      "range": "[8, 23]"
+    }
+  ],
+  "range": "[0, 27]"
+}
+`;
+
+exports[`
+/**
+ * @returns
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[8, 16]"
+    }
+  ],
+  "range": "[0, 20]"
+}
+`;
+
+exports[`
+/**
+ * @returns  foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[18, 21]"
+      },
+      "range": "[8, 21]"
+    }
+  ],
+  "range": "[0, 25]"
+}
+`;
+
+exports[`
+/**
+ * @returns {any}
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "any",
+        "range": "[17, 22]"
+      },
+      "name": null,
+      "description": null,
+      "range": "[8, 22]"
+    }
+  ],
+  "range": "[0, 26]"
+}
+`;
+
+exports[`
+/**
+ * @returns foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "returns",
+        "range": "[8, 16]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo",
+        "range": "[17, 20]"
+      },
+      "range": "[8, 20]"
+    }
+  ],
+  "range": "[0, 24]"
+}
+`;
+
+exports[`
+/**
+ * foo
+ * goo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo\\n goo",
+    "range": "[8, 18]"
+  },
+  "blocks": [],
+  "range": "[0, 22]"
+}
+`;
+
+exports[`
+/**
+ * foo
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo",
+    "range": "[8, 11]"
+  },
+  "blocks": [],
+  "range": "[0, 15]"
+}
+`;
+
+exports[`
+/**
+ foo
+ @param a foo 
+ */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo",
+    "range": "[6, 9]"
+  },
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[11, 17]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[18, 19]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo ",
+        "range": "[20, 24]"
+      },
+      "range": "[11, 24]"
+    }
+  ],
+  "range": "[0, 28]"
+}
+`;
+
+exports[`
+/**
+* foo
+*/
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo",
+    "range": "[7, 10]"
+  },
+  "blocks": [],
+  "range": "[0, 13]"
+}
+`;
+
+exports[`
+/** @param {string} a
+ *  foo */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[5, 11]"
+      },
+      "typeAnnotation": {
+        "type": "JSDocTypeAnnotation",
+        "value": "string",
+        "range": "[12, 20]"
+      },
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[21, 22]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "foo ",
+        "range": "[27, 31]"
+      },
+      "range": "[5, 31]"
+    }
+  ],
+  "range": "[0, 33]"
+}
+`;
+
+exports[`
+/** foo
+    goo */
+ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo\\ngoo ",
+    "range": "[5, 17]"
+  },
+  "blocks": [],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [],
+  "range": "[0, 6]"
+}
+`;
+
+exports[`/** @#foo */ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "Tag expected.",
+  "type": undefined,
+}
+`;
+
+exports[`/** @@foo */ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "Tag expected.",
+  "type": undefined,
+}
+`;
+
+exports[`/** @-foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "-foo",
+        "range": "[4, 9]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[4, 9]"
+    }
+  ],
+  "range": "[0, 12]"
+}
+`;
+
+exports[`/** @author me <me@example.com> */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "author",
+        "range": "[4, 11]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "me <me",
+        "range": "[12, 18]"
+      },
+      "range": "[4, 18]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "example",
+        "range": "[18, 26]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": ".com> ",
+        "range": "[26, 32]"
+      },
+      "range": "[18, 32]"
+    }
+  ],
+  "range": "[0, 34]"
+}
+`;
+
+exports[`/** @foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo",
+        "range": "[4, 8]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[4, 8]"
+    }
+  ],
+  "range": "[0, 11]"
+}
+`;
+
+exports[`/** @foo#foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo",
+        "range": "[4, 8]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "#foo ",
+        "range": "[8, 13]"
+      },
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 15]"
+}
+`;
+
+exports[`/** @foo.foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo",
+        "range": "[4, 8]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": ".foo ",
+        "range": "[8, 13]"
+      },
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 15]"
+}
+`;
+
+exports[`/** @foo@foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo",
+        "range": "[4, 8]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[4, 8]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo",
+        "range": "[8, 12]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[8, 12]"
+    }
+  ],
+  "range": "[0, 15]"
+}
+`;
+
+exports[`/** @foo_foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo",
+        "range": "[4, 8]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "_foo ",
+        "range": "[8, 13]"
+      },
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 15]"
+}
+`;
+
+exports[`/** @foo-foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "foo-foo",
+        "range": "[4, 12]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[4, 12]"
+    }
+  ],
+  "range": "[0, 15]"
+}
+`;
+
+exports[`/** @fooFoo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "fooFoo",
+        "range": "[4, 11]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": null,
+      "range": "[4, 11]"
+    }
+  ],
+  "range": "[0, 14]"
+}
+`;
+
+exports[`/** @param +a */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "+a",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": null,
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 16]"
+}
+`;
+
+exports[`/** @param .a */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": ".a",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": null,
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 16]"
+}
+`;
+
+exports[`/** @param @abc */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "@abc",
+        "optional": false,
+        "range": "[11, 15]"
+      },
+      "description": null,
+      "range": "[4, 15]"
+    }
+  ],
+  "range": "[0, 18]"
+}
+`;
+
+exports[`/** @param [a */ 1`] = `
+Object {
+  "expected": undefined,
+  "index": undefined,
+  "message": "\\"]\\" expected.",
+  "type": undefined,
+}
+`;
+
+exports[`/** @param [a . b] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a . b",
+        "optional": true,
+        "range": "[11, 18]"
+      },
+      "description": null,
+      "range": "[4, 18]"
+    }
+  ],
+  "range": "[0, 21]"
+}
+`;
+
+exports[`/** @param [a = b] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a = b",
+        "optional": true,
+        "range": "[11, 18]"
+      },
+      "description": null,
+      "range": "[4, 18]"
+    }
+  ],
+  "range": "[0, 21]"
+}
+`;
+
+exports[`/** @param [a b] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a b",
+        "optional": true,
+        "range": "[11, 16]"
+      },
+      "description": null,
+      "range": "[4, 16]"
+    }
+  ],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** @param [a="@returns"] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a=\\"@returns\\"",
+        "optional": true,
+        "range": "[11, 25]"
+      },
+      "description": null,
+      "range": "[4, 25]"
+    }
+  ],
+  "range": "[0, 28]"
+}
+`;
+
+exports[`/** @param [a="foo"] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a=\\"foo\\"",
+        "optional": true,
+        "range": "[11, 20]"
+      },
+      "description": null,
+      "range": "[4, 20]"
+    }
+  ],
+  "range": "[0, 23]"
+}
+`;
+
+exports[`/** @param [a="foo] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a=\\"foo",
+        "optional": true,
+        "range": "[11, 19]"
+      },
+      "description": null,
+      "range": "[4, 19]"
+    }
+  ],
+  "range": "[0, 22]"
+}
+`;
+
+exports[`/** @param [a=@returns] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a=@returns",
+        "optional": true,
+        "range": "[11, 23]"
+      },
+      "description": null,
+      "range": "[4, 23]"
+    }
+  ],
+  "range": "[0, 26]"
+}
+`;
+
+exports[`/** @param [a=b] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a=b",
+        "optional": true,
+        "range": "[11, 16]"
+      },
+      "description": null,
+      "range": "[4, 16]"
+    }
+  ],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** @param [a=foo bar] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a=foo bar",
+        "optional": true,
+        "range": "[11, 22]"
+      },
+      "description": null,
+      "range": "[4, 22]"
+    }
+  ],
+  "range": "[0, 25]"
+}
+`;
+
+exports[`/** @param [a] */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": true,
+        "range": "[11, 14]"
+      },
+      "description": null,
+      "range": "[4, 14]"
+    }
+  ],
+  "range": "[0, 17]"
+}
+`;
+
+exports[`/** @param a .b */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[11, 12]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": ".b ",
+        "range": "[13, 16]"
+      },
+      "range": "[4, 16]"
+    }
+  ],
+  "range": "[0, 18]"
+}
+`;
+
+exports[`/** @param a @param b */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a",
+        "optional": false,
+        "range": "[11, 12]"
+      },
+      "description": null,
+      "range": "[4, 12]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[13, 19]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "b",
+        "optional": false,
+        "range": "[20, 21]"
+      },
+      "description": null,
+      "range": "[13, 21]"
+    }
+  ],
+  "range": "[0, 24]"
+}
+`;
+
+exports[`/** @param a+ */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a+",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": null,
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 16]"
+}
+`;
+
+exports[`/** @param a. */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a.",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": null,
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 16]"
+}
+`;
+
+exports[`/** @param a. */ 2`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a.",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": null,
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 16]"
+}
+`;
+
+exports[`/** @param a. b */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a.",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "b ",
+        "range": "[14, 16]"
+      },
+      "range": "[4, 16]"
+    }
+  ],
+  "range": "[0, 18]"
+}
+`;
+
+exports[`/** @param a..b */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a..b",
+        "optional": false,
+        "range": "[11, 15]"
+      },
+      "description": null,
+      "range": "[4, 15]"
+    }
+  ],
+  "range": "[0, 18]"
+}
+`;
+
+exports[`/** @param a.b */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a.b",
+        "optional": false,
+        "range": "[11, 14]"
+      },
+      "description": null,
+      "range": "[4, 14]"
+    }
+  ],
+  "range": "[0, 17]"
+}
+`;
+
+exports[`/** @param a.b.c */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a.b.c",
+        "optional": false,
+        "range": "[11, 16]"
+      },
+      "description": null,
+      "range": "[4, 16]"
+    }
+  ],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** @param a[].name */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a[",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": {
+        "type": "JSDocDescription",
+        "value": "].name ",
+        "range": "[13, 20]"
+      },
+      "range": "[4, 20]"
+    }
+  ],
+  "range": "[0, 22]"
+}
+`;
+
+exports[`/** @param a{ */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "param",
+        "range": "[4, 10]"
+      },
+      "typeAnnotation": null,
+      "name": {
+        "type": "JSDocName",
+        "name": "a{",
+        "optional": false,
+        "range": "[11, 13]"
+      },
+      "description": null,
+      "range": "[4, 13]"
+    }
+  ],
+  "range": "[0, 16]"
+}
+`;
+
+exports[`/** Quoted tags like \`@types\`, "@types", and '@types' */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "Quoted tags like \`",
+    "range": "[4, 22]"
+  },
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "types",
+        "range": "[22, 28]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "\`, \\"",
+        "range": "[28, 32]"
+      },
+      "range": "[22, 32]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "types",
+        "range": "[32, 38]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "\\", and '",
+        "range": "[38, 46]"
+      },
+      "range": "[32, 46]"
+    },
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "types",
+        "range": "[46, 52]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "' ",
+        "range": "[52, 54]"
+      },
+      "range": "[46, 54]"
+    }
+  ],
+  "range": "[0, 56]"
+}
+`;
+
+exports[`/** cc "@ljharb" */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "cc \\"",
+    "range": "[4, 8]"
+  },
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "ljharb",
+        "range": "[8, 15]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "\\" ",
+        "range": "[15, 17]"
+      },
+      "range": "[8, 17]"
+    }
+  ],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** cc '@ljharb' */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "cc '",
+    "range": "[4, 8]"
+  },
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "ljharb",
+        "range": "[8, 15]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "' ",
+        "range": "[15, 17]"
+      },
+      "range": "[8, 17]"
+    }
+  ],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** cc \`@ljharb\` */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "cc \`",
+    "range": "[4, 8]"
+  },
+  "blocks": [
+    {
+      "type": "JSDocBlock",
+      "tag": {
+        "type": "JSDocTag",
+        "name": "ljharb",
+        "range": "[8, 15]"
+      },
+      "typeAnnotation": null,
+      "name": null,
+      "description": {
+        "type": "JSDocDescription",
+        "value": "\` ",
+        "range": "[15, 17]"
+      },
+      "range": "[8, 17]"
+    }
+  ],
+  "range": "[0, 19]"
+}
+`;
+
+exports[`/** foo */ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": {
+    "type": "JSDocDescription",
+    "value": "foo ",
+    "range": "[4, 8]"
+  },
+  "blocks": [],
+  "range": "[0, 10]"
+}
+`;
+
+exports[`/***/ 1`] = `
+{
+  "type": "JSDocComment",
+  "description": null,
+  "blocks": [],
+  "range": "[0, 5]"
+}
+`;

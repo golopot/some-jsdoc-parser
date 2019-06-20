@@ -1,0 +1,33 @@
+{
+  "name": "jsdoc-parser-foo",
+  "version": "0.1.0",
+  "main": "lib/parser.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint .",
+    "format": "prettier --write --loglevel warn .",
+    "jest": "jest",
+    "test": "npm-run-all jest format tsc lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.7.4",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsdoc": "^15.9.1",
+    "jest": "^21.2.1",
+    "jest-progress-bar-reporter": "^1.0.17",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^14.1.1",
+    "prettier": "^2.0.5",
+    "semver": "^6.3.0",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
