@@ -13,5 +13,10 @@ function log() {
   }
 }
 
-const ast = parser.parse(`/** @param {any} [a] foo */`);
+const ast = parser.parse(`
+/**
+ * @param {string} foo - some parameter.
+ * @returns {string} 
+ */
+`);
 log(ast);
