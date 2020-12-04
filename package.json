@@ -1,5 +1,5 @@
 {
-  "name": "jsdoc-parser-foo",
+  "name": "some-jsdoc-parser",
   "version": "0.1.0",
   "main": "lib/parser.js",
   "files": [
