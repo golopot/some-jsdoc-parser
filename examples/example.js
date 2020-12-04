@@ -1,5 +1,5 @@
 const util = require('util');
-const parser = require('./lib/parser');
+const parser = require('../lib/parser');
 
 function log() {
   for (const arg of arguments) {

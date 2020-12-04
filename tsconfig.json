@@ -4,7 +4,7 @@
     // "lib": [],                             /* Specify library files to be included in the compilation. */
     "allowJs": true /* Allow javascript files to be compiled. */,
     "checkJs": true /* Report errors in .js files. */,
-    "outDir": "dist",
+    // "outDir": "dist",
     // "noEmit": true,
     "declaration": true,
     "emitDeclarationOnly": true,
@@ -20,5 +20,6 @@
     "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
   },
-  "include": ["lib"]
+  "include": ["lib"],
+  "exclude": ["lib/parser.d.ts"]
 }

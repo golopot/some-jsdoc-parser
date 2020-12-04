@@ -9,6 +9,7 @@ export interface JSDocTag {
   range: [number, number];
 }
 
+/** rewqrwqrewq */
 export interface JSDocTypeAnnotation {
   type: 'JSDocTypeAnnotation';
   value: string;

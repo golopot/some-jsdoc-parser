@@ -6,4 +6,5 @@ module.exports = {
   reporters: semver.satisfies(process.versions.node, '>=10')
     ? ['jest-progress-bar-reporter']
     : undefined,
+  collectCoverageFrom: ['lib/**/*.js'],
 };

@@ -6,8 +6,7 @@ function serializeParseError(error) {
   return {
     type: error.type,
     message: error.message,
-    index: error.index,
-    expected: error.expected,
+    pos: error.pos,
   };
 }
 
@@ -17,13 +16,39 @@ function serializeParseError(error) {
  */
 function testPass(code) {
   test(code, () => {
+    const ast = Parser.parse(code);
+    expect(ast).toMatchSnapshot();
+  });
+}
+
+/**
+ * @param {string} code
+ * @returns {void}
+ */
+function testFail(code) {
+  test(code, () => {
     let ast;
+    let parseError;
+    let hasCatched = false;
+
     try {
       ast = Parser.parse(code);
     } catch (err) {
-      ast = serializeParseError(err);
+      hasCatched = true;
+      parseError = err;
     }
-    expect(ast).toMatchSnapshot();
+
+    if (!hasCatched) {
+      throw new Error(
+        `Expected the parser to throw an error. Got ${JSON.stringify(
+          ast,
+          null,
+          2
+        )}.`
+      );
+    }
+
+    expect(serializeParseError(parseError)).toMatchSnapshot();
   });
 }
 
@@ -162,7 +187,7 @@ testPass(`
  *  foo */
 `);
 
-testPass(`
+testFail(`
 /**
  * @
  * @returns
@@ -185,8 +210,8 @@ testPass(`/** @foo_foo */`);
 testPass(`/** @foo.foo */`);
 testPass(`/** @foo#foo */`);
 testPass(`/** @foo@foo */`);
-testPass(`/** @#foo */`);
-testPass(`/** @@foo */`);
+testFail(`/** @#foo */`);
+testFail(`/** @@foo */`);
 testPass(`/** @-foo */`);
 
 testPass(`/** @param .a */`);
@@ -212,8 +237,8 @@ testPass(`/** @param [a=@returns] */`);
 testPass(`/** @param [a="@returns"] */`);
 testPass(`/** @param [a b] */`);
 testPass(`/** @param [a . b] */`);
-testPass(`/** @param [a */`);
-testPass(`
+testFail(`/** @param [a */`);
+testFail(`
 /**
  * @param [a
  * @returns
@@ -224,13 +249,13 @@ testPass(`/** @param @abc */`);
 
 testPass(`/** @param a[].name */`);
 
-testPass(`
+testFail(`
 /**
  * @param {number a
  */
 `);
 
-testPass(`
+testFail(`
 /**
  * @param {{x: number} a
  */

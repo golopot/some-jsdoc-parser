@@ -86,9 +86,8 @@ exports[`
  */
  1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "Tag expected.",
+  "pos": 8,
   "type": undefined,
 }
 `;
@@ -226,9 +225,8 @@ exports[`
  */
  1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "\\"]\\" expected.",
+  "pos": 17,
   "type": undefined,
 }
 `;
@@ -382,9 +380,8 @@ exports[`
  */
  1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "'}' expected.",
+  "pos": 31,
   "type": undefined,
 }
 `;
@@ -434,9 +431,8 @@ exports[`
  */
  1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "'}' expected.",
+  "pos": 26,
   "type": undefined,
 }
 `;
@@ -903,18 +899,16 @@ exports[`/** */ 1`] = `
 
 exports[`/** @#foo */ 1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "Tag expected.",
+  "pos": 4,
   "type": undefined,
 }
 `;
 
 exports[`/** @@foo */ 1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "Tag expected.",
+  "pos": 4,
   "type": undefined,
 }
 `;
@@ -1244,9 +1238,8 @@ exports[`/** @param @abc */ 1`] = `
 
 exports[`/** @param [a */ 1`] = `
 Object {
-  "expected": undefined,
-  "index": undefined,
   "message": "\\"]\\" expected.",
+  "pos": 14,
   "type": undefined,
 }
 `;

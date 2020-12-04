@@ -4,3 +4,4 @@ yarn.lock
 yarn-error.log
 coverage
 dist
+lib/parser.d.ts
