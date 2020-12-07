@@ -1,6 +1,6 @@
-# some-jsdoc-parser 
-
 [![npm](https://img.shields.io/npm/v/some-jsdoc-parser.svg?style=flat)](https://www.npmjs.org/package/some-jsdoc-parser) ![build status](https://github.com/golopot/jsdoc-parser/workflows/build/badge.svg) [![codecov.io](https://codecov.io/github/golopot/jsdoc-parser/coverage.svg?branch=master)](https://codecov.io/github/golopot/jsdoc-parser?branch=master)
+
+# some-jsdoc-parser
 
 A hand-written jsdoc parser.
 
@@ -26,7 +26,7 @@ const ast = SomeJsdocParser.parse(`
  */
 `);
 
-console.log(ast)
+console.log(ast);
 
 // {
 //   type: 'JSDocComment',
